@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'winFont';
+    src: url('rubber-biscuit/RUBBBBO_.TTF');
+}
+@font-face{
+    font-family: 'titleFont';
+    src: url('zero-velocity-brk/zerovelo.ttf')
+    /* src: url('zero-velocity-brk/zerovelo.ttf'); */
+}
+
+
+body {
+    background-color: lightskyblue;
+}
+
+
+#mainWrapper {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+#Tower1, #Tower2, #Tower3  {
+    height: 300px;
+    width: 12px;
+    background-color: darkorange;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#Bottom1 {
+    height: 12px;
+    width: 300px;
+    background-color: darkorange;
+    border-radius: 75%;
+    z-index: 5;
+}
+
+#Bottom2 {
+    height: 12px;
+    width: 300px;
+    background-color: darkorange;
+    border-radius: 75%;
+    z-index: 5;
+}
+
+
+
+#Bottom3 {
+    height: 12px;
+    width: 300px;
+    background-color: darkorange;
+    border-radius: 75%;
+    z-index: 5;
+}
+
+
+
+#Button {
+    display: block;
+    margin: auto;
+    background-color: darkorange;
+    border-radius: 50px;
+    padding: 7px 7px;    
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+
+#Disk0 {
+    height: 30px;
+    width: 190px;
+    background-color: greenyellow;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+
+}   
+
+#Disk1 {
+    height: 30px;
+    width: 150px;
+    background-color: yellow;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+    
+}
+
+#Disk2 {
+    height: 30px;
+    width: 115px;
+    background-color: purple;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+    
+}
+
+#Disk3 {
+    height: 30px;
+    width: 80px;
+    background-color: red;
+    border-radius: 50px;
+    position: relative;
+    z-index: 0;
+  
+}
+
+
+#secondWrapper {
+    height: 312px;
+}
+
+
+#thirdWrapper {
+    height: 312px;
+}
+
+
+#fourthWrapper {
+    height: 312px;
+}
+
+.diskBox{
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    align-items: center;
+    position: relative;
+}
+
+.placeHolders {
+    height: 30px;
+    width: 200px;
+    background-color: lightskyblue;
+}
+
+
+#Win {
+    font-family: 'winFont';
+    color: red;
+    font-size: 100px
+}
+
+h1 {
+    font-family: 'titleFont';
+    font-size: 50px
+}
+
+.disableclicks{
+  pointer-events: none;
+}
